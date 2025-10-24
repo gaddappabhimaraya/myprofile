@@ -119,10 +119,10 @@ const AnimatedBackground = () => {
 
 // Typewriter Effect Component
 const TypewriterText = ({ text, speed = 100 }) => {
-  const [displayText, setDisplayText] = useState('');
-  
+  const [displayText, setDisplayText] = useState(text.charAt(0) || '');
+
   useEffect(() => {
-    let i = 0;
+    let i = 1; // start after first char
     const typingInterval = setInterval(() => {
       if (i < text.length) {
         setDisplayText(prev => prev + text.charAt(i));
@@ -131,10 +131,10 @@ const TypewriterText = ({ text, speed = 100 }) => {
         clearInterval(typingInterval);
       }
     }, speed);
-    
+
     return () => clearInterval(typingInterval);
   }, [text, speed]);
-  
+
   return (
     <span>
       {displayText}
