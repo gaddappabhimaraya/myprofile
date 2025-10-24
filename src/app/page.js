@@ -517,11 +517,11 @@ const GaddeppaPortfolio = () => {
         {/* Contact Section */}
         <section id="contact" className="py-20 text-center">
           <Title level={1} style={{ color: 'white', marginBottom: '24px' }}>
-            Let's Connect
+            Let&aposs Connect
           </Title>
           
           <Paragraph style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '18px', marginBottom: '48px' }}>
-            Ready to bring your ideas to life? Let's collaborate and create something amazing.
+            Ready to bring your ideas to life? Let&aposs collaborate and create something amazing.
           </Paragraph>
           
           <GlassCard className="inline-block">
